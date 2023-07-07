@@ -1,0 +1,17 @@
+.header{
+    text-align: center;
+}
+
+h1{
+    color: red;
+}
+
+button{
+    border-radius: 10px;
+    /* border-color: green; */
+}
+
+img{
+    border-radius: 10px;
+    height: 1;
+}
