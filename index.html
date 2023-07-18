@@ -14,19 +14,63 @@
 
 <body>
 
-    <div class="container-fluid">
-        <h1 class="header">Welcome to The Soos Soundboard</h2>
-        <h3 class="header">Your home for all sounds Soos Ramirez related!</h1>
+    <div class="container">
+        <h1 class="header">Welcome to The Soos Soundboard</h1>
+        <h3 class="header">Your home for all sounds Soos Ramirez related!</h3>
+
+        <div class="row">
+
+
+            <div class="col" id="column1">
+                <div class="btn" onclick="playSound('ateAManAlive.mp3')">
+                    <img src="images/confused.webp" alt="placeholder">                    
+                </div>
+                <p>I Ate a Man Alive Today</p>
+
+                <div class="btn" onclick="playSound('boopSwag.mp3')">
+                    <img src="images/default.jpg" alt="placeholder">
+                </div>
+                <p>Boop-a-doop-boop-boop... SWAG!</p>
+
+                <div class="btn" onclick="playSound('questionyTheQuestionMark.mp3')">
+                    <img src="images/questiony.jpg" alt="placeholder">
+                </div>
+                <p>Questiony The Question Mark</p>
+
+                <div class="btn" onclick="playSound('yueah2.mp3')">
+                    <img src="images/withmcgucket.jpg" alt="placeholder">
+                </div>
+                <p>YEASSS</p>
+            </div>
+
+
+            <div class="col-4"></div>
+
+            <div class="col" id="column3">
+                <div class="btn" onclick="playSound('faceGoodImSoos.mp3')">
+                    <img src="images/happy.webp" alt="placeholder">
+                </div>
+                <p>Your Face is Good. I'm a Soos</p>
+
+                <div class="btn" onclick="playSound('iLikeIt.mp3')">
+                    <img src="images/hand.webp" alt="placeholder">
+                </div>
+                <p>I Like It!</p>
+
+                <div class="btn" onclick="playSound('ruckus.mp3')">
+                    <img src="images/stanhat.jpg" alt="placeholder">
+                </div>
+                <p>Ruckus</p>
+
+                <div class="btn" onclick="playSound('hglegh.mp3')">
+                    <img src="images/youngsoos.webp" alt="placeholder">
+                </div>
+                <p>Hglegh</p>
+            </div>
+
+
+        </div>
     </div>
-
-    <button>
-        <img src="images/confused.webp" alt="placeholder">
-    </button>
-
-    <div class="btn btn-secondary" onclick="playSound('faceGoodImSoos.mp3')">
-        <img src="images/penguin_placeholder.jpg" alt="placeholder">
-    </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
@@ -34,14 +78,14 @@
 </body>
 
 <script>
-    function playSound(filename){
+    function playSound(filename) {
         var fullpath = 'sounds/' + filename;
-        
+
         var sound = new Audio(fullpath);
         sound.play();
     }
 
-    function findFile(fileName){
+    function findFile(fileName) {
 
     }
 </script>

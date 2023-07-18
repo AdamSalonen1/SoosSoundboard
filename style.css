@@ -6,12 +6,37 @@ h1{
     color: red;
 }
 
-button{
-    border-radius: 10px;
-    /* border-color: green; */
+img{
+    border-radius: 200mm;
+    height: 100mm;
+    width: 100mm;
 }
 
-img{
-    border-radius: 10px;
-    height: 1;
+.btn{
+    border-color: black;
+    border-width: 2mm;
+    border-radius: 200mm;
+    margin-top: 20mm;
+    margin-bottom: 2mm;
+}
+
+#column1{
+    justify-content: center;
+}
+
+#column3{
+    justify-content: left;
+}
+
+p{
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 158, 56);
+    border-radius: 20px;
+}
+
+body{
+    background-image: url(images/gravityWallpaper1.webp);
+    background-size: cover;
 }
